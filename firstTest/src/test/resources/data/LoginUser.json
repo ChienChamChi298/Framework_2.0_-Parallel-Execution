@@ -1,0 +1,15 @@
+{
+	"invaildUser" : { 
+		"userName": "invaild_User", 
+		"password": "secret_sauce"
+	}, 
+	"invaildPassword" : {
+		"userName": "standard_user", 
+		"password": "invaild_password"
+	}, 
+	"vaildUser" : { 
+		"userName": "standard_user", 
+		"password": "secret_sauce"	
+	}
+} 
+
