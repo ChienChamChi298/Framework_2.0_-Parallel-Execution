@@ -2,5 +2,11 @@
 <resources>  
 	<!-- Error text --> 
 	<string name = "invalid_username_or_password">Username and password do not match any user in this service.</string> 
-	<string name = "product_title">PRODUCTS</string>
+	<string name = "product_title">PRODUCTS</string> 
+	<string name = "product_page_name_detail">Sauce Labs Backpack</string> 
+	<string name = "product_page_name_desc">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</string> 
+	<string name = "product_page_price_detail">$29.99</string> 
+	
+	
+	 
 </resources>

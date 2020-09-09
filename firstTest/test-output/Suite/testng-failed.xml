@@ -5,9 +5,11 @@
     <listener class-name="com.qa.listener.TestListener"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="emulator" value="true"/>
     <parameter name="platformVersion" value="11"/>
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="ChienChamChi"/>
+    <parameter name="udid" value="80932AHJDJF"/>
+    <parameter name="deviceName" value="Pixel_2_API_30"/>
     <classes>
       <class name="com.qa.test.LoginTest">
         <methods>
@@ -15,7 +17,9 @@
           <include name="afterMethod"/>
           <include name="beforeTest"/>
           <include name="successLogin"/>
+          <include name="invaildUser"/>
           <include name="beforeMethod"/>
+          <include name="invaildPassword"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.qa.test.LoginTest -->

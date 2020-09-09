@@ -7,6 +7,7 @@ import com.qa.util.TestUtils;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 import org.testng.annotations.BeforeTest;
@@ -28,7 +29,8 @@ import org.testng.annotations.AfterTest;
 
 public class BaseTest {
  protected static AppiumDriver driver;
- protected static Properties props; 
+ protected static Properties props;  
+ protected static String platform;
  InputStream inputStream; 
  InputStream stringIs;
  TestUtils testUltils; 
@@ -38,11 +40,12 @@ public class BaseTest {
 	 PageFactory.initElements(new AppiumFieldDecorator(driver), this);
  }
  
- @Parameters({"platformName", "platformVersion", "deviceName"})
+ @Parameters({"platformName", "platformVersion", "deviceName", "emulator", "udid"})
   @BeforeTest
-  public void beforeTest(String platformName, String platformVersion , String deviceName) throws Exception  {  
+  public void beforeTest(String platformName, String platformVersion , String deviceName, String emulator, String udid) throws Exception  {   
+	 	URL url;
 	    try {  
-
+            platform = platformName;
 	    	props = new Properties(); 
 	    	String propFileName="config.properties"; 
 	    	String xmlString = "stringExpect/string.xml";
@@ -55,37 +58,57 @@ public class BaseTest {
 	    	strings = testUltils.parseStringXML(stringIs);
 	    	
 	    	DesiredCapabilities  capabilities = new DesiredCapabilities(); 
-	    	 
-	    	//Cach 0
-	    	//Not Working : URL return Null;=
-			//URL urlApp = getClass().getClassLoader().getResource(props.getProperty("androidAppLocation")); 
-			//capabilities.setCapability("app",  urlApp); -> NUll
-			//System.out.println("URL folder: " + urlApp); 
-			
+	   	
 			//Cach 1
-			capabilities.setCapability("app",  "C:\\Users\\CSM\\Downloads\\Android.SauceLabs.Mobile.Sample.app.2.3.0.apk");  
+			//capabilities.setCapability("app",  "C:\\Users\\CSM\\Downloads\\Android.SauceLabs.Mobile.Sample.app.2.3.0.apk");  
 			
 			//Cach 2 
 			//String urlApp = getClass().getResource(props.getProperty("androidAppLocation")).getFile(); 
 			//capabilities.setCapability("app",  urlApp);   
 			//Explain why ? 
 			
-			capabilities.setCapability("platformName", platformName);
-			capabilities.setCapability("platformVersion", platformVersion);
-			capabilities.setCapability("deviceName", deviceName); 
-			capabilities.setCapability("automationName", props.getProperty("androidAutomationName")); 
-			
-   
-			
-			capabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
-			capabilities.setCapability("appPackage",  props.getProperty("androidAppPackage")); 
 		
-			URL url = new URL("http://127.0.0.1:4723/wd/hub");  
-			driver = new AndroidDriver(url, capabilities);
-			String sessionId = driver.getSessionId().toString();  
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
-			
-	    } catch (Exception e) {
+			capabilities.setCapability("platformName", platformName);
+		
+			capabilities.setCapability("deviceName", deviceName); 
+            switch(platformName) {
+	            case "Android" :
+	            	//String urlAppAndroid = getClass().getResource(props.getProperty("androidAppLocation")).getFile();  
+	            	//capabilities.setCapability("app",  urlAppAndroid);   
+					capabilities.setCapability("automationName", props.getProperty("androidAutomationName"));   
+					capabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
+					capabilities.setCapability("appPackage",  props.getProperty("androidAppPackage"));   
+					
+					if (emulator.equalsIgnoreCase("true")) { 
+						//capabilities.setCapability("avd", deviceName);   
+						capabilities.setCapability("platformVersion", platformVersion);
+					} else { 
+						capabilities.setCapability("udid", udid); 
+					} 
+					
+					url = new URL("http://127.0.0.1:4723/wd/hub");  
+					driver = new AndroidDriver(url, capabilities); 
+					break;  
+					
+	            case "iOS" :  
+	            	// Install app
+	            	//String urlAppIOS = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();  
+	            	//capabilities.setCapability("app",  urlAppIOS);
+	            	
+	            	//If installed app, just use app 
+	            	capabilities.setCapability("bundleId",  props.getProperty("iOSBundleId")); 
+	            	
+	            	capabilities.setCapability("platformVersion", platformVersion);
+					capabilities.setCapability("automationName", props.getProperty("iOSAutomationName"));   
+					url = new URL("http://127.0.0.1:4723/wd/hub");  
+					driver = new IOSDriver(url, capabilities);  
+					break ; 
+					
+				default :  
+					throw new Exception("Invaild platform " + platformName);  
+		    }  
+          
+		} catch (Exception e) {
 	    	e.printStackTrace();
 	    } finally {
 	    	if (inputStream != null) {
@@ -119,7 +142,20 @@ public String getAttribute(MobileElement e, String attribute) {
  		return e.getAttribute(attribute);
 }
  
- 
+public String getText(MobileElement e) { 
+	switch(platform) {
+	case "Android" : 
+		return getAttribute(e, "text");  
+	case "iOS" : 
+		return getAttribute(e, "label"); 
+	} 
+	return null;
+}
+
+public void clear(MobileElement e) { 
+	waitForVisibility(e); 
+	e.clear();
+}
  
   @AfterTest
   public void afterTest() { 

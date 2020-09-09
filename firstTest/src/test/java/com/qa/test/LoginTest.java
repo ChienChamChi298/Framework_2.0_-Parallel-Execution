@@ -51,7 +51,8 @@ public class LoginTest extends BaseTest {
 
   @AfterMethod
   public void afterMethod() {
-  }
+  } 
+  
   @Test
   public void invaildUser() { 
 	  loginPage.enterUserName(loginUser.getJSONObject("invaildUser").getString("userName")); 
