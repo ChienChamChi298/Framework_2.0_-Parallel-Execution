@@ -51,7 +51,6 @@ public String errTxt() {
 }
 
 public ProductPage login(String userName, String password) {  
-	System.out.println("Press login button");
 	enterUserName(userName); 
 	enterPassword(password); 
 	return pressLoginBtn();

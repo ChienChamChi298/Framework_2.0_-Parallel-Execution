@@ -9,17 +9,21 @@
 
     <!-- Change value here if run IOS emulator--> 
     <parameter name="platformName" value="Android"/>  <!--iOS / 11.3 / iPhone 11 -->
-  	<parameter name="platformVersion" value="11"/>
+  	<parameter name="platformVersion" value="10"/>
   	<parameter name="deviceName" value="Pixel_2_API_30"/>  
   	<parameter name="emulator" value="true"/>    <!--if use emulator device-->
     <parameter name="udid" value="80932AHJDJF"/> <!--if use real device, find udid command : -->
     <classes> 
-		<class name="com.qa.test.LoginTest"/> 
+		<!--<class name="com.qa.test.LoginTest"/>  -->
  <!--   
  		<methods>  
       		<include name="invaildUser" />
      	</methods> 
- --> 
+ -->  
+    	<class name="com.qa.test.ProductTest"/>  
+    	<methods>  
+    		<include name="validateProductOnProductDetailPage" />
+    	</methods>
     </classes>
   </test> <!-- Test -->    
 </suite> <!-- Suite -->

@@ -5,6 +5,8 @@ import org.testng.annotations.Test;
 import com.qa.util.TestUtils;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.FindsByAndroidUIAutomator;
+import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
@@ -13,6 +15,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -21,7 +24,9 @@ import java.util.HashMap;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -33,7 +38,8 @@ public class BaseTest {
  protected static String platform;
  InputStream inputStream; 
  InputStream stringIs;
- TestUtils testUltils; 
+ TestUtils testUltils;  
+ 
  protected static HashMap <String, String> strings = new HashMap <String, String>();
  
  public BaseTest() {
@@ -72,9 +78,13 @@ public class BaseTest {
 		
 			capabilities.setCapability("deviceName", deviceName); 
             switch(platformName) {
-	            case "Android" :
-	            	//String urlAppAndroid = getClass().getResource(props.getProperty("androidAppLocation")).getFile();  
-	            	//capabilities.setCapability("app",  urlAppAndroid);   
+	            case "Android" :    
+	            	
+	            	String urlAppAndroid = getClass().getResource(props.getProperty("androidAppLocation")).getFile();    
+	            	String appLocation = new File(urlAppAndroid).toString(); // String above include '\' at first character so we want remove it 
+	            	System.out.println("Absolute path file apk is " + appLocation);
+	            	capabilities.setCapability("app",  appLocation); 
+	            	
 					capabilities.setCapability("automationName", props.getProperty("androidAutomationName"));   
 					capabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
 					capabilities.setCapability("appPackage",  props.getProperty("androidAppPackage"));   
@@ -85,7 +95,7 @@ public class BaseTest {
 					} else { 
 						capabilities.setCapability("udid", udid); 
 					} 
-					
+
 					url = new URL("http://127.0.0.1:4723/wd/hub");  
 					driver = new AndroidDriver(url, capabilities); 
 					break;  
@@ -156,7 +166,36 @@ public void clear(MobileElement e) {
 	waitForVisibility(e); 
 	e.clear();
 }
- 
+public void closeApp() {
+	((InteractsWithApps)driver).closeApp(); // Exit app
+}  
+
+public void launchApp() {
+	((InteractsWithApps)driver).launchApp(); // Launch app
+}
+
+public MobileElement scrollElement() {
+	return (MobileElement) ((FindsByAndroidUIAutomator) driver).findElementByAndroidUIAutomator( 
+		"new UiScrollable(new UiSelector()" + ".description(\"test-Inventory item page\")).scrollIntoView(" + "new UiSelector().description(\"test-Price\"));");
+			
+//	return (MobileElement) ((FindsByAndroidUIAutomator) driver).findElementByAndroidUIAutomator( 
+//		"new UiScrollable(new UiSelector()" + ".scrollable(true).scrollIntoView(" + "new UiSelector().description(\"test-Price\"));"); //if only one parent emelent can scroll
+} 
+
+
+public void iOSScrollToElement() {
+	  RemoteWebElement parent = (RemoteWebElement)driver.findElement(By.className("XCUIElementTypeScrollView"));
+	  String parentID = parent.getId();
+	  HashMap<String, String> scrollObject = new HashMap<String, String>();
+	  scrollObject.put("element", parentID);
+	  scrollObject.put("predicateString", "label == 'ADD TO CART'");
+	  driver.executeScript("mobile:scroll", scrollObject);
+}  
+
+
+public AppiumDriver getDriver() {
+	return driver;
+}
   @AfterTest
   public void afterTest() { 
 	  driver.quit();

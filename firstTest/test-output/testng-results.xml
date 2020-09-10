@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38596" started-at="2020-09-09T16:35:34 GMT+07:00" finished-at="2020-09-09T16:36:13 GMT+07:00">
+  <suite name="Suite" duration-ms="45802" started-at="2020-09-10T17:04:36 GMT+07:00" finished-at="2020-09-10T17:05:22 GMT+07:00">
     <groups>
     </groups>
-    <test name="Test" duration-ms="38596" started-at="2020-09-09T16:35:34 GMT+07:00" finished-at="2020-09-09T16:36:13 GMT+07:00">
-      <class name="com.qa.test.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="beforeTest" is-config="true" duration-ms="17034" started-at="2020-09-09T16:35:34 GMT+07:00" finished-at="2020-09-09T16:35:51 GMT+07:00">
+    <test name="Test" duration-ms="45802" started-at="2020-09-10T17:04:36 GMT+07:00" finished-at="2020-09-10T17:05:22 GMT+07:00">
+      <class name="com.qa.test.ProductTest">
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="beforeTest" is-config="true" duration-ms="14385" started-at="2020-09-10T17:04:36 GMT+07:00" finished-at="2020-09-10T17:04:51 GMT+07:00">
           <params>
             <param index="0">
               <value>
@@ -16,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[11]]>
+                <![CDATA[10]]>
               </value>
             </param>
             <param index="2">
@@ -38,72 +38,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="beforeClass" is-config="true" duration-ms="3" started-at="2020-09-09T16:35:51 GMT+07:00" finished-at="2020-09-09T16:35:51 GMT+07:00">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="beforeClass" is-config="true" duration-ms="7623" started-at="2020-09-10T17:04:51 GMT+07:00" finished-at="2020-09-10T17:04:58 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="187" started-at="2020-09-09T16:35:51 GMT+07:00" finished-at="2020-09-09T16:35:51 GMT+07:00">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="beforeMethod" is-config="true" duration-ms="6150" started-at="2020-09-10T17:04:59 GMT+07:00" finished-at="2020-09-10T17:05:05 GMT+07:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.qa.test.LoginTest.invaildPassword()]]>
+                <![CDATA[public void com.qa.test.ProductTest.validateProductOnProductDetailPage()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invaildPassword()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="invaildPassword" duration-ms="9802" started-at="2020-09-09T16:35:51 GMT+07:00" finished-at="2020-09-09T16:36:01 GMT+07:00">
+        <test-method status="PASS" signature="validateProductOnProductDetailPage()[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="validateProductOnProductDetailPage" duration-ms="11732" started-at="2020-09-10T17:05:05 GMT+07:00" finished-at="2020-09-10T17:05:16 GMT+07:00">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- invaildPassword -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-09T16:36:01 GMT+07:00" finished-at="2020-09-09T16:36:01 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-09T16:36:01 GMT+07:00" finished-at="2020-09-09T16:36:01 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.LoginTest.invaildUser()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invaildUser()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="invaildUser" duration-ms="3450" started-at="2020-09-09T16:36:01 GMT+07:00" finished-at="2020-09-09T16:36:04 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invaildUser -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-09-09T16:36:04 GMT+07:00" finished-at="2020-09-09T16:36:04 GMT+07:00">
+        </test-method> <!-- validateProductOnProductDetailPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="afterMethod" is-config="true" duration-ms="3807" started-at="2020-09-10T17:05:16 GMT+07:00" finished-at="2020-09-10T17:05:20 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-09T16:36:04 GMT+07:00" finished-at="2020-09-09T16:36:04 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.LoginTest.successLogin()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="successLogin()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="successLogin" duration-ms="6408" started-at="2020-09-09T16:36:04 GMT+07:00" finished-at="2020-09-09T16:36:11 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-09T16:36:11 GMT+07:00" finished-at="2020-09-09T16:36:11 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.qa.test.LoginTest@1da51a35]" name="afterTest" is-config="true" duration-ms="1680" started-at="2020-09-09T16:36:11 GMT+07:00" finished-at="2020-09-09T16:36:13 GMT+07:00">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.qa.test.ProductTest@7e9a5fbe]" name="afterTest" is-config="true" duration-ms="2065" started-at="2020-09-10T17:05:20 GMT+07:00" finished-at="2020-09-10T17:05:22 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.qa.test.LoginTest -->
+      </class> <!-- com.qa.test.ProductTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

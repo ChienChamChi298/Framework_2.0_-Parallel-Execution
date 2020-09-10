@@ -30,7 +30,7 @@ public class LoginTest extends BaseTest {
 	  try {
 	  String filePath = "data/LoginUser.json"; 
 	  dataIs = getClass().getClassLoader().getSystemResourceAsStream(filePath); 
-	  System.out.println("Input steam is " + dataIs.toString());  
+	  //System.out.println("Input steam is " + dataIs.toString());  
 	  JSONTokener tokener = new JSONTokener(dataIs); 
 	  loginUser = new JSONObject(tokener); 
 	  } catch (Exception e) {
@@ -39,7 +39,9 @@ public class LoginTest extends BaseTest {
 		  if (dataIs != null) {
 			  dataIs.close();
 		  }
-	  }
+	  } 
+	  closeApp(); 
+	  launchApp();
   }
   
   @BeforeMethod

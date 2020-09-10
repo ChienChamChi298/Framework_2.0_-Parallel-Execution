@@ -26,7 +26,8 @@ public class ProductTest extends BaseTest {
   LoginPage loginPage; 
   ProductPage productPage;
   SettingPage settingPage;
-  ProductDetailPage detailPage;
+  ProductDetailPage detailPage; 
+  
   InputStream dataIs;
   JSONObject loginUser;
   
@@ -35,7 +36,6 @@ public class ProductTest extends BaseTest {
 	  try {
 	  String filePath = "data/LoginUser.json"; 
 	  dataIs = getClass().getClassLoader().getSystemResourceAsStream(filePath); 
-	  System.out.println("Input steam is " + dataIs.toString());  
 	  JSONTokener tokener = new JSONTokener(dataIs); 
 	  loginUser = new JSONObject(tokener); 
 	  } catch (Exception e) {
@@ -44,72 +44,65 @@ public class ProductTest extends BaseTest {
 		  if (dataIs != null) {
 			  dataIs.close();
 		  }
-	  }
+	  } 
+	  
+	  closeApp(); 
+	  launchApp();
   }
   
   @BeforeMethod
   public void beforeMethod(Method m) { 
 	  loginPage = new LoginPage(); 
-	  System.out.println("\n" + "******* Starting test: " + m.getName() + " ******** " + "\n");
-	  
+	  System.out.println("\n" + "******* Starting test: " + m.getName() + " ******** " + "\n"); 
+	  productPage = loginPage.login(loginUser.getJSONObject("vaildUser").getString("userName"), loginUser.getJSONObject("vaildUser").getString("password"));
   }
 
   @AfterMethod
-  public void afterMethod() {
+  public void afterMethod() { 
+	  settingPage = productPage.pressBtn(); 
+	  loginPage = settingPage.pressBtn();
   } 
   
   @Test
   public void  validateProductOnProductPage() {  
 	  
-	  SoftAssert sa = new SoftAssert();
-	  productPage = loginPage.login(loginUser.getJSONObject("vaildUser").getString("userName"), loginUser.getJSONObject("vaildUser").getString("password"));
-	  String actualTitle = productPage.getProductName(); 
+	  SoftAssert sa = new SoftAssert(); 
+	  
+	  String actualTitle = productPage.getProductName();
 	  sa.assertEquals(actualTitle, strings.get("product_page_name_detail"));  
 	  
 	  String actualPrice = productPage.getPriceProduct(); 
 	  sa.assertEquals(actualPrice, strings.get("product_page_price_detail"));   
 	  
-	  settingPage = productPage.pressBtn(); 
-	  loginPage = settingPage.pressBtn();  
 	  
 	  sa.assertAll(); 
   } 
   
   @Test
-  public void  validateProductOnProductPage1() {  
+  public void  validateProductOnProductDetailPage() {  
 	  
 	  SoftAssert sa = new SoftAssert();
-	  productPage = loginPage.login(loginUser.getJSONObject("vaildUser").getString("userName"), loginUser.getJSONObject("vaildUser").getString("password"));
 	  
 	  detailPage = productPage.clickTitle();
 	  String actualTitle = detailPage.getProductTitle();
-	  sa.assertEquals(actualTitle, strings.get("product_page_name_detail"));  
+	  sa.assertEquals(actualTitle, strings.get("product_detail_name"));  
 	  
-	  String actualPrice = detailPage.getProductDesc();
-	  sa.assertEquals(actualPrice, strings.get("product_page_name_desc"));   
+	  detailPage.scrollToPrice();
 	  
+	  String actualDesc = detailPage.getProductDesc();
+	  sa.assertEquals(actualDesc, strings.get("product_detail_desc"));    
 
+	  String actualPrice = detailPage.getPrice();
+	  sa.assertEquals(actualPrice, strings.get("product_detail_price"));
 	  
+	  productPage = detailPage.backToProduct(); 
 	  
-	  
-	  sa.assertAll(); 
-  }
-  
-  @Test
-  public void  validateProductOnProductPage2() {  
-	  
-	  SoftAssert sa = new SoftAssert();
-	  productPage = loginPage.login(loginUser.getJSONObject("vaildUser").getString("userName"), loginUser.getJSONObject("vaildUser").getString("password"));
-	 
-	  
-	  sa.assertEquals(actualTitle, strings.get("product_page_name_detail"));  
-	  
-	  String actualPrice = productPage.getPriceProduct(); 
-	  sa.assertEquals(actualPrice, strings.get("product_page_price_detail"));   
+//Scroll for IOS 
+//	  detailPage.iOSScrollToElement();   
+//	  sa.assertTrue(detailPage.isAddToCartBtnDisplayed()); 
 	  
 	  sa.assertAll(); 
   }
   
- 
 
 }

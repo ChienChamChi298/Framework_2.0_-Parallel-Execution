@@ -23,6 +23,7 @@ import org.w3c.dom.NodeList;
 public class TestUtils {
 	public static final long WAIT = 10; 
 	
+	//Function read file xml and take data  
 	public HashMap<String, String> parseStringXML(InputStream file) throws Exception{
 		HashMap<String, String> stringMap = new HashMap<String, String>();
 		//Get Document Builder

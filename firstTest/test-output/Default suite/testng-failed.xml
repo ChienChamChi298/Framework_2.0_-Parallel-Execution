@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.test.LoginTest">
+      <class name="com.qa.test.ProductTest">
         <methods>
           <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="SuccessLogin"/>
-          <include name="beforeTest"/>
-          <include name="invaildUser"/>
           <include name="beforeMethod"/>
-          <include name="invaildPassword"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="validateProductOnProductPage"/>
+          <include name="validateProductOnProductDetailPage"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.qa.test.LoginTest -->
+      </class> <!-- com.qa.test.ProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
