@@ -1,6 +1,6 @@
 package com.qa;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 
 import com.qa.util.TestUtils;
 
@@ -16,26 +16,37 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod; 
+
+import io.appium.java_client.screenrecording.CanRecordScreen;
 
 public class BaseTest {
  protected static AppiumDriver driver;
  protected static Properties props;  
- protected static String platform;
+ protected static String platform; 
+ protected static String dateTime; 
+ 
  InputStream inputStream; 
  InputStream stringIs;
  TestUtils testUltils;  
@@ -46,9 +57,54 @@ public class BaseTest {
 	 PageFactory.initElements(new AppiumFieldDecorator(driver), this);
  }
  
+ 
+ @BeforeMethod   
+ public void beforeMethod() { 
+	 System.out.println("Before method base test");
+	 ((CanRecordScreen) driver).startRecordingScreen();
+ } 
+ 
+ @AfterMethod 
+ public void afterMethod(ITestResult result) { 
+	 System.out.println("After method base test");
+	 String media = ((CanRecordScreen) driver).stopRecordingScreen(); 
+	 
+	 //Record video khi testcase fail
+	 if (result.getStatus() == 2 ) { 
+		 Map <String, String> params = result.getTestContext().getCurrentXmlTest().getAllParameters();
+		 
+		 String dir = "Video" + File.separator + params.get("platformName") + "_" + params.get("platformVersion") + "_" + params.get("deviceName") + File.separator + 
+				      dateTime + File.separator + result.getTestClass().getClass().getSimpleName();  
+		 System.out.println( result.getTestClass()); 
+		 System.out.println( result.getTestClass().getClass());
+		 
+		 File videoDir = new File(dir); 
+		 
+		 if (!videoDir.exists()) { 
+			 videoDir.mkdirs();
+		 } 
+		 
+		 try {
+			 
+			FileOutputStream stream = new FileOutputStream(videoDir + File.separator + result.getName() + ".mp4"); 
+			stream.write(Base64.decodeBase64(media)); 
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	 }
+
+ }
+ 
  @Parameters({"platformName", "platformVersion", "deviceName", "emulator", "udid"})
   @BeforeTest
-  public void beforeTest(String platformName, String platformVersion , String deviceName, String emulator, String udid) throws Exception  {   
+  public void beforeTest(String platformName, String platformVersion , String deviceName, String emulator, String udid) throws Exception  {  
+	 	testUltils = new  TestUtils(); 
+	 	dateTime = testUltils.getDateTime();
 	 	URL url;
 	    try {  
             platform = platformName;
@@ -60,7 +116,6 @@ public class BaseTest {
 	    	props.load(inputStream);
 	    	
 	    	stringIs = getClass().getClassLoader().getResourceAsStream(xmlString); 
-	    	testUltils = new  TestUtils(); 
 	    	strings = testUltils.parseStringXML(stringIs);
 	    	
 	    	DesiredCapabilities  capabilities = new DesiredCapabilities(); 
@@ -195,10 +250,16 @@ public void iOSScrollToElement() {
 
 public AppiumDriver getDriver() {
 	return driver;
+} 
+
+public String getDateTime() {
+	return dateTime;
 }
+
   @AfterTest
   public void afterTest() { 
 	  driver.quit();
   }
-
+  
+ 
 }

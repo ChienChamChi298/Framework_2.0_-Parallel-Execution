@@ -22,7 +22,7 @@ import org.json.JSONTokener;
 import org.junit.Assert;
 import org.testng.annotations.AfterClass;
 
-public class ProductTest extends BaseTest { 
+public class ProductTest extends BaseTest{ 
   LoginPage loginPage; 
   ProductPage productPage;
   SettingPage settingPage;
@@ -53,7 +53,8 @@ public class ProductTest extends BaseTest {
   @BeforeMethod
   public void beforeMethod(Method m) { 
 	  loginPage = new LoginPage(); 
-	  System.out.println("\n" + "******* Starting test: " + m.getName() + " ******** " + "\n"); 
+	  System.out.println("\n" + "******* Starting test: " + m.getName() + " ******** " + "\n");  
+	  
 	  productPage = loginPage.login(loginUser.getJSONObject("vaildUser").getString("userName"), loginUser.getJSONObject("vaildUser").getString("password"));
   }
 
@@ -68,7 +69,7 @@ public class ProductTest extends BaseTest {
 	  
 	  SoftAssert sa = new SoftAssert(); 
 	  
-	  String actualTitle = productPage.getProductName();
+	  String actualTitle = productPage.getProductName() + "1234";
 	  sa.assertEquals(actualTitle, strings.get("product_page_name_detail"));  
 	  
 	  String actualPrice = productPage.getPriceProduct(); 

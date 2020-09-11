@@ -14,16 +14,16 @@
   	<parameter name="emulator" value="true"/>    <!--if use emulator device-->
     <parameter name="udid" value="80932AHJDJF"/> <!--if use real device, find udid command : -->
     <classes> 
-		<!--<class name="com.qa.test.LoginTest"/>  -->
- <!--   
- 		<methods>  
+		<class name="com.qa.test.LoginTest"/>  
+    
+ 	<!--	<methods>  
       		<include name="invaildUser" />
-     	</methods> 
- -->  
-    	<class name="com.qa.test.ProductTest"/>  
-    	<methods>  
+     	</methods> -->
+
+   	<class name="com.qa.test.ProductTest"/>  
+    <!--   <methods>  
     		<include name="validateProductOnProductDetailPage" />
-    	</methods>
+    	</methods> -->
     </classes>
   </test> <!-- Test -->    
 </suite> <!-- Suite -->

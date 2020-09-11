@@ -16,8 +16,10 @@
           <include name="afterTest"/>
           <include name="beforeMethod"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
           <include name="beforeClass"/>
-          <include name="validateProductOnProductDetailPage"/>
+          <include name="validateProductOnProductPage"/>
+          <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.qa.test.ProductTest -->
