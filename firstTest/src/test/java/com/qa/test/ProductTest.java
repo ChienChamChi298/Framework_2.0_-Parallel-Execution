@@ -28,11 +28,11 @@ public class ProductTest extends BaseTest{
   SettingPage settingPage;
   ProductDetailPage detailPage; 
   
-  InputStream dataIs;
   JSONObject loginUser;
   
   @BeforeClass 
-  public void beforeClass() throws Exception { 
+  public void beforeClass() throws Exception {  
+	  InputStream dataIs = null;
 	  try {
 	  String filePath = "data/LoginUser.json"; 
 	  dataIs = getClass().getClassLoader().getSystemResourceAsStream(filePath); 
@@ -70,10 +70,10 @@ public class ProductTest extends BaseTest{
 	  SoftAssert sa = new SoftAssert(); 
 	  
 	  String actualTitle = productPage.getProductName() + "1234";
-	  sa.assertEquals(actualTitle, strings.get("product_page_name_detail"));  
+	  sa.assertEquals(actualTitle, getStrings().get("product_page_name_detail"));  
 	  
 	  String actualPrice = productPage.getPriceProduct(); 
-	  sa.assertEquals(actualPrice, strings.get("product_page_price_detail"));   
+	  sa.assertEquals(actualPrice, getStrings().get("product_page_price_detail"));   
 	  
 	  
 	  sa.assertAll(); 
@@ -86,15 +86,15 @@ public class ProductTest extends BaseTest{
 	  
 	  detailPage = productPage.clickTitle();
 	  String actualTitle = detailPage.getProductTitle();
-	  sa.assertEquals(actualTitle, strings.get("product_detail_name"));  
+	  sa.assertEquals(actualTitle, getStrings().get("product_detail_name"));  
 	  
 	  detailPage.scrollToPrice();
 	  
 	  String actualDesc = detailPage.getProductDesc();
-	  sa.assertEquals(actualDesc, strings.get("product_detail_desc"));    
+	  sa.assertEquals(actualDesc, getStrings().get("product_detail_desc"));    
 
 	  String actualPrice = detailPage.getPrice();
-	  sa.assertEquals(actualPrice, strings.get("product_detail_price"));
+	  sa.assertEquals(actualPrice, getStrings().get("product_detail_price"));
 	  
 	  productPage = detailPage.backToProduct(); 
 	  

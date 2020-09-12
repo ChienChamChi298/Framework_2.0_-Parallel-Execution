@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false"> 
 
-  <listeners>  
-  	<listener class-name="com.qa.listener.TestListener" />  	
-  </listeners>
-  <test name="Test">   
-  
-
+ 
+  <test name="Android">  
+    <listeners>  
+  		<listener class-name="com.qa.listener.TestListener" />  	
+    </listeners> 
     <!-- Change value here if run IOS emulator--> 
     <parameter name="platformName" value="Android"/>  <!--iOS / 11.3 / iPhone 11 -->
   	<parameter name="platformVersion" value="10"/>
-  	<parameter name="deviceName" value="Pixel_2_API_30"/>  
+  	<parameter name="deviceName" value="Pixel_2_API_29"/>  
   	<parameter name="emulator" value="true"/>    <!--if use emulator device-->
-    <parameter name="udid" value="80932AHJDJF"/> <!--if use real device, find udid command : -->
+    <parameter name="udid" value="80932AHJDJF"/> <!--if use real device, find udid command : --> 
+    <parameter name="systemPort" value="10000"/>
+    <parameter name="chromeDriverPort" value="11000"/>
     <classes> 
 		<class name="com.qa.test.LoginTest"/>  
-    
- 	<!--	<methods>  
+ 	<!--<methods>  
       		<include name="invaildUser" />
      	</methods> -->
-
-   	<class name="com.qa.test.ProductTest"/>  
-    <!--   <methods>  
+   		<class name="com.qa.test.ProductTest"/>  
+    <!--<methods>  
     		<include name="validateProductOnProductDetailPage" />
     	</methods> -->
     </classes>
-  </test> <!-- Test -->    
+  </test> <!-- Test -->   
+     
+     <test name="Android_2">  
+    <listeners>  
+  		<listener class-name="com.qa.listener.TestListener" />  	
+    </listeners> 
+    <!-- Change value here if run IOS emulator--> 
+    <parameter name="platformName" value="Android"/>  <!--iOS / 11.3 / iPhone 11 -->
+  	<parameter name="platformVersion" value="10"/>
+  	<parameter name="deviceName" value="Nexus_5X_API_29"/>  
+  	<parameter name="emulator" value="true"/>    <!--if use emulator device-->
+    <parameter name="udid" value="80932AHJDJF"/> <!--if use real device, find udid command : --> 
+    <parameter name="systemPort" value="10001"/>
+    <parameter name="chromeDriverPort" value="11001"/>
+    <classes> 
+		<class name="com.qa.test.LoginTest"/>  
+ 	<!--<methods>  
+      		<include name="invaildUser" />
+     	</methods> -->
+   		<class name="com.qa.test.ProductTest"/>  
+    <!--<methods>  
+    		<include name="validateProductOnProductDetailPage" />
+    	</methods> -->
+    </classes>
+  </test> <!-- Test -->   
 </suite> <!-- Suite -->

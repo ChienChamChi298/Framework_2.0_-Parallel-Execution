@@ -22,21 +22,20 @@ import org.testng.annotations.AfterClass;
 public class LoginTest extends BaseTest { 
   LoginPage loginPage; 
   ProductPage productPage;
-  InputStream dataIs;
   JSONObject loginUser;
   
   @BeforeClass 
-  public void beforeClass() throws Exception { 
-	  try {
+  public void beforeClass() throws Exception {  
+	  InputStream dataIs = null;
+	  try { 
 	  String filePath = "data/LoginUser.json"; 
-	  dataIs = getClass().getClassLoader().getSystemResourceAsStream(filePath); 
-	  //System.out.println("Input steam is " + dataIs.toString());  
+	  dataIs = getClass().getClassLoader().getSystemResourceAsStream(filePath);  
 	  JSONTokener tokener = new JSONTokener(dataIs); 
 	  loginUser = new JSONObject(tokener); 
 	  } catch (Exception e) {
 		  e.printStackTrace();
 	  } finally {
-		  if (dataIs != null) {
+		if (dataIs != null) {
 			  dataIs.close();
 		  }
 	  } 
@@ -61,7 +60,7 @@ public class LoginTest extends BaseTest {
 	  loginPage.enterPassword(loginUser.getJSONObject("invaildUser").getString("password")); 
 	  loginPage.pressLoginBtn();  
 	  String actualErr = loginPage.errTxt(); 
-	  String expectErr = strings.get("invalid_username_or_password");/*"Username and password do not match any user in this service.";*/
+	  String expectErr = getStrings().get("invalid_username_or_password");/*"Username and password do not match any user in this service.";*/
 	  System.out.println("Actual err : "+ actualErr + "\n" + "Expect err : " + expectErr); 
 	  Assert.assertEquals(expectErr, actualErr);
   }
@@ -72,7 +71,7 @@ public class LoginTest extends BaseTest {
 	  loginPage.enterPassword(loginUser.getJSONObject("invaildPassword").getString("password")); 
 	  loginPage.pressLoginBtn();  
 	  String actualErr = loginPage.errTxt(); 
-	  String expectErr = strings.get("invalid_username_or_password");/*"Username and password do not match any user in this service."*/; 
+	  String expectErr = getStrings().get("invalid_username_or_password");/*"Username and password do not match any user in this service."*/; 
 	  System.out.println("Actual err : "+ actualErr + "\n" + "Expect err : " + expectErr); 
 	  Assert.assertEquals(expectErr, actualErr);
   }
@@ -83,7 +82,7 @@ public class LoginTest extends BaseTest {
 	  loginPage.enterPassword(loginUser.getJSONObject("vaildUser").getString("password")); 
 	  productPage = loginPage.pressLoginBtn();  
 	  String actualTitle = productPage.getTitle(); 
-	  String expectTitle = strings.get("product_title");/*"PRODUCTS"*/;
+	  String expectTitle = getStrings().get("product_title");/*"PRODUCTS"*/;
 	  System.out.println("Actual title : "+ actualTitle + "\n" + "Expect title : " + expectTitle); 
 	  Assert.assertEquals(expectTitle, actualTitle);
   }

@@ -56,7 +56,7 @@ public class TestUtils {
 	}  
 	
 	// Dung de lay chuoi thoi gian theo dinh dang cua minh -> Dung de dat ten cho file anh chup testcase fail 
-	public String getDateTime() { 
+	public String getDateTimeUtils() { 
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss"); 
 		Date date= new Date();  
 		return dateFormat.format(date);

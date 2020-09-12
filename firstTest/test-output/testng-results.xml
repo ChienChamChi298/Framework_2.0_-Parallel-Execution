@@ -1,98 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="2" total="7" passed="4">
+<testng-results skipped="10" failed="0" ignored="4" total="14" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[This is image]]>
-    </line>
-    <line>
-      <![CDATA[<a href='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png'><img src='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png' height=500 width=500 /></a>]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="56956" started-at="2020-09-11T13:09:55 GMT+07:00" finished-at="2020-09-11T13:10:52 GMT+07:00">
+  <suite name="Suite" duration-ms="144" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
     <groups>
     </groups>
-    <test name="Test" duration-ms="56956" started-at="2020-09-11T13:09:55 GMT+07:00" finished-at="2020-09-11T13:10:52 GMT+07:00">
+    <test name="Android" duration-ms="73" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
       <class name="com.qa.test.ProductTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="beforeClass" is-config="true" duration-ms="2729" started-at="2020-09-11T13:10:22 GMT+07:00" finished-at="2020-09-11T13:10:25 GMT+07:00">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="beforeClass" is-config="true" duration-ms="-1599893329263" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="beforeMethod" is-config="true" duration-ms="619" started-at="2020-09-11T13:10:25 GMT+07:00" finished-at="2020-09-11T13:10:25 GMT+07:00">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="beforeMethod" is-config="true" duration-ms="-1599893329264" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="beforeMethod" is-config="true" duration-ms="4311" started-at="2020-09-11T13:10:25 GMT+07:00" finished-at="2020-09-11T13:10:29 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.ProductTest.validateProductOnProductDetailPage()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="beforeMethod" is-config="true" duration-ms="-1599893329264" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validateProductOnProductDetailPage()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="validateProductOnProductDetailPage" duration-ms="8129" started-at="2020-09-11T13:10:29 GMT+07:00" finished-at="2020-09-11T13:10:38 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnProductDetailPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="afterMethod" is-config="true" duration-ms="3211" started-at="2020-09-11T13:10:38 GMT+07:00" finished-at="2020-09-11T13:10:41 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="afterMethod" is-config="true" duration-ms="929" started-at="2020-09-11T13:10:41 GMT+07:00" finished-at="2020-09-11T13:10:42 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOnProductDetailPage status=SUCCESS method=ProductTest.validateProductOnProductDetailPage()[pri:0, instance:com.qa.test.ProductTest@15b3e5b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="beforeMethod" is-config="true" duration-ms="492" started-at="2020-09-11T13:10:42 GMT+07:00" finished-at="2020-09-11T13:10:42 GMT+07:00">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="beforeMethod" is-config="true" duration-ms="3563" started-at="2020-09-11T13:10:42 GMT+07:00" finished-at="2020-09-11T13:10:46 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.ProductTest.validateProductOnProductPage()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="validateProductOnProductPage()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="validateProductOnProductPage" duration-ms="1728" started-at="2020-09-11T13:10:46 GMT+07:00" finished-at="2020-09-11T13:10:48 GMT+07:00">
-          <exception class="java.lang.AssertionError">
+        <test-method status="SKIP" signature="validateProductOnProductDetailPage()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="validateProductOnProductDetailPage" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
             <message>
-              <![CDATA[The following asserts failed:
-expected [Sauce Labs Backpack] but found [Sauce Labs Backpack1234]]]>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Sauce Labs Backpack] but found [Sauce Labs Backpack1234]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at com.qa.test.ProductTest.validateProductOnProductPage(ProductTest.java:79)
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
@@ -108,34 +57,79 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
-            <line>
-              <![CDATA[This is image]]>
-            </line>
-            <line>
-              <![CDATA[<a href='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png'><img src='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png' height=500 width=500 /></a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- validateProductOnProductPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="afterMethod" is-config="true" duration-ms="2056" started-at="2020-09-11T13:10:48 GMT+07:00" finished-at="2020-09-11T13:10:51 GMT+07:00">
+        </test-method> <!-- validateProductOnProductDetailPage -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="afterMethod" is-config="true" duration-ms="-1599893329267" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@15b3e5b]" name="afterMethod" is-config="true" duration-ms="1020" started-at="2020-09-11T13:10:51 GMT+07:00" finished-at="2020-09-11T13:10:52 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOnProductPage status=FAILURE method=ProductTest.validateProductOnProductPage()[pri:0, instance:com.qa.test.ProductTest@15b3e5b] output=This is image]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="afterMethod" is-config="true" duration-ms="-1599893329267" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="beforeMethod" is-config="true" duration-ms="-1599893329269" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="validateProductOnProductPage()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="validateProductOnProductPage" duration-ms="1" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnProductPage -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="beforeMethod" is-config="true" duration-ms="-1599893329270" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="afterMethod" is-config="true" duration-ms="-1599893329273" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@710726a3]" name="afterMethod" is-config="true" duration-ms="-1599893329274" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.qa.test.ProductTest -->
       <class name="com.qa.test.LoginTest">
-        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeTest" is-config="true" duration-ms="6918" started-at="2020-09-11T13:09:55 GMT+07:00" finished-at="2020-09-11T13:10:02 GMT+07:00">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeTest" is-config="true" duration-ms="10" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
           <params>
             <param index="0">
               <value>
@@ -149,7 +143,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="2">
               <value>
-                <![CDATA[Pixel_2_API_30]]>
+                <![CDATA[Pixel_2_API_29]]>
               </value>
             </param>
             <param index="3">
@@ -162,121 +156,648 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
                 <![CDATA[80932AHJDJF]]>
               </value>
             </param>
+            <param index="5">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[11000]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
           </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeClass" is-config="true" duration-ms="2938" started-at="2020-09-11T13:10:02 GMT+07:00" finished-at="2020-09-11T13:10:05 GMT+07:00">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeClass" is-config="true" duration-ms="-1599893329234" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="539" started-at="2020-09-11T13:10:05 GMT+07:00" finished-at="2020-09-11T13:10:06 GMT+07:00">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329242" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="105" started-at="2020-09-11T13:10:06 GMT+07:00" finished-at="2020-09-11T13:10:06 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.LoginTest.invaildPassword()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329242" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invaildPassword()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="invaildPassword" duration-ms="4509" started-at="2020-09-11T13:10:06 GMT+07:00" finished-at="2020-09-11T13:10:10 GMT+07:00">
+        <test-method status="SKIP" signature="invaildPassword()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="invaildPassword" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invaildPassword -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="799" started-at="2020-09-11T13:10:10 GMT+07:00" finished-at="2020-09-11T13:10:11 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invaildPassword status=SUCCESS method=LoginTest.invaildPassword()[pri:0, instance:com.qa.test.LoginTest@5a4041cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329247" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-11T13:10:10 GMT+07:00" finished-at="2020-09-11T13:10:10 GMT+07:00">
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329247" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="476" started-at="2020-09-11T13:10:11 GMT+07:00" finished-at="2020-09-11T13:10:12 GMT+07:00">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329250" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T13:10:12 GMT+07:00" finished-at="2020-09-11T13:10:12 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.LoginTest.invaildUser()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329251" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="invaildUser()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="invaildUser" duration-ms="3288" started-at="2020-09-11T13:10:12 GMT+07:00" finished-at="2020-09-11T13:10:15 GMT+07:00">
+        <test-method status="SKIP" signature="invaildUser()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="invaildUser" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invaildUser -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="790" started-at="2020-09-11T13:10:15 GMT+07:00" finished-at="2020-09-11T13:10:16 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invaildUser status=SUCCESS method=LoginTest.invaildUser()[pri:0, instance:com.qa.test.LoginTest@5a4041cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329255" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-11T13:10:15 GMT+07:00" finished-at="2020-09-11T13:10:15 GMT+07:00">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329255" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="479" started-at="2020-09-11T13:10:16 GMT+07:00" finished-at="2020-09-11T13:10:16 GMT+07:00">
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329256" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-09-11T13:10:16 GMT+07:00" finished-at="2020-09-11T13:10:16 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.qa.test.LoginTest.successLogin()]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="beforeMethod" is-config="true" duration-ms="-1599893329257" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="successLogin()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="successLogin" duration-ms="4754" started-at="2020-09-11T13:10:16 GMT+07:00" finished-at="2020-09-11T13:10:21 GMT+07:00">
+        <test-method status="SKIP" signature="successLogin()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="successLogin" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-09-11T13:10:21 GMT+07:00" finished-at="2020-09-11T13:10:21 GMT+07:00">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329259" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterMethod" is-config="true" duration-ms="887" started-at="2020-09-11T13:10:21 GMT+07:00" finished-at="2020-09-11T13:10:22 GMT+07:00">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=successLogin status=SUCCESS method=LoginTest.successLogin()[pri:0, instance:com.qa.test.LoginTest@5a4041cc] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterMethod" is-config="true" duration-ms="-1599893329260" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.qa.test.LoginTest@5a4041cc]" name="afterTest" is-config="true" duration-ms="675" started-at="2020-09-11T13:10:52 GMT+07:00" finished-at="2020-09-11T13:10:52 GMT+07:00">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.qa.test.LoginTest@149494d8]" name="afterTest" is-config="true" duration-ms="-1599893329275" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.qa.test.LoginTest -->
-    </test> <!-- Test -->
+    </test> <!-- Android -->
+    <test name="Android_2" duration-ms="41" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+      <class name="com.qa.test.ProductTest">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="beforeClass" is-config="true" duration-ms="-1599893329329" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="-1599893329331" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="-1599893329332" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="validateProductOnProductDetailPage()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="validateProductOnProductDetailPage" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnProductDetailPage -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="-1599893329334" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="-1599893329335" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="-1599893329341" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="beforeMethod" is-config="true" duration-ms="-1599893329342" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="validateProductOnProductPage()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="validateProductOnProductPage" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnProductPage -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="-1599893329344" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.ProductTest@1da51a35]" name="afterMethod" is-config="true" duration-ms="-1599893329345" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.qa.test.ProductTest -->
+      <class name="com.qa.test.LoginTest">
+        <test-method status="FAIL" signature="beforeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nexus_5X_API_29]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[80932AHJDJF]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[10001]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[11001]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeClass" is-config="true" duration-ms="-1599893329313" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329314" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="invaildPassword()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="invaildPassword" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invaildPassword -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329315" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329317" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329318" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329319" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329320" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="invaildUser()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="invaildUser" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invaildUser -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329322" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329322" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329323" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="beforeMethod" is-config="true" duration-ms="-1599893329325" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="successLogin()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="successLogin" duration-ms="0" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="2020-09-12T13:48:49 GMT+07:00">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+The local variable url may not have been initialized
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+The local variable url may not have been initialized
+
+at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successLogin -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329327" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterMethod" is-config="true" duration-ms="-1599893329328" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.qa.test.LoginTest@6d3af739]" name="afterTest" is-config="true" duration-ms="-1599893329346" started-at="2020-09-12T13:48:49 GMT+07:00" finished-at="1970-01-01T07:00:00 GMT+07:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.qa.test.LoginTest -->
+    </test> <!-- Android_2 -->
   </suite> <!-- Suite -->
 </testng-results>

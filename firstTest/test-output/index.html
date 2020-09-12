@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,50 +93,66 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">10 methods,  10 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.ProductTest" hash-for-method="validateProductOnProductPage">validateProductOnProductPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="invaildPassword">invaildPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="invaildPassword">invaildPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="invaildUser">invaildUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="invaildUser">invaildUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="successLogin">successLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.LoginTest" hash-for-method="successLogin">successLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.ProductTest" hash-for-method="validateProductOnProductDetailPage">validateProductOnProductDetailPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.ProductTest" hash-for-method="validateProductOnProductDetailPage">validateProductOnProductDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.ProductTest" hash-for-method="validateProductOnProductPage">validateProductOnProductPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.test.ProductTest" hash-for-method="validateProductOnProductPage">validateProductOnProductPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -148,30 +164,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.qa.test.ProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateProductOnProductPage">
-                  </a> <!-- validateProductOnProductPage -->
-                  <span class="method-name">validateProductOnProductPage</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [Sauce Labs Backpack] but found [Sauce Labs Backpack1234]
-	at com.qa.test.ProductTest.validateProductOnProductPage(ProductTest.java:79)
-	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.qa.test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -180,6 +175,25 @@
                   <a name="invaildPassword">
                   </a> <!-- invaildPassword -->
                   <span class="method-name">invaildPassword</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invaildPassword">
+                  </a> <!-- invaildPassword -->
+                  <span class="method-name">invaildPassword</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -187,6 +201,25 @@
                   <a name="invaildUser">
                   </a> <!-- invaildUser -->
                   <span class="method-name">invaildUser</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invaildUser">
+                  </a> <!-- invaildUser -->
+                  <span class="method-name">invaildUser</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -194,13 +227,32 @@
                   <a name="successLogin">
                   </a> <!-- successLogin -->
                   <span class="method-name">successLogin</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successLogin">
+                  </a> <!-- successLogin -->
+                  <span class="method-name">successLogin</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">com.qa.test.ProductTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -209,10 +261,55 @@
                   <a name="validateProductOnProductDetailPage">
                   </a> <!-- validateProductOnProductDetailPage -->
                   <span class="method-name">validateProductOnProductDetailPage</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnProductDetailPage">
+                  </a> <!-- validateProductOnProductDetailPage -->
+                  <span class="method-name">validateProductOnProductDetailPage</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnProductPage">
+                  </a> <!-- validateProductOnProductPage -->
+                  <span class="method-name">validateProductOnProductPage</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnProductPage">
+                  </a> <!-- validateProductOnProductPage -->
+                  <span class="method-name">validateProductOnProductPage</span>
+                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
+	The local variable url may not have been initialized
+
+	at com.qa.BaseTest.beforeTest(BaseTest.java:217)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -226,17 +323,32 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.listener.TestListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Android&quot;&gt;
     &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
     &lt;parameter name=&quot;platformVersion&quot; value=&quot;10&quot;/&gt;
+    &lt;parameter name=&quot;chromeDriverPort&quot; value=&quot;11000&quot;/&gt;
     &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
     &lt;parameter name=&quot;udid&quot; value=&quot;80932AHJDJF&quot;/&gt;
-    &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel_2_API_30&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel_2_API_29&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;10000&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.test.LoginTest&quot;/&gt;
       &lt;class name=&quot;com.qa.test.ProductTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Android --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Android_2&quot;&gt;
+    &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;10&quot;/&gt;
+    &lt;parameter name=&quot;chromeDriverPort&quot; value=&quot;11001&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;80932AHJDJF&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Nexus_5X_API_29&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;10001&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.qa.test.ProductTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Android_2 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,7 +360,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Android (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Android_2 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,32 +389,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateProductOnProductDetailPage')
+data.setCell(0, 1, 'validateProductOnProductPage')
 data.setCell(0, 2, 'com.qa.test.ProductTest')
-data.setCell(0, 3, 8129);
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'successLogin')
-data.setCell(1, 2, 'com.qa.test.LoginTest')
-data.setCell(1, 3, 4754);
+data.setCell(1, 1, 'validateProductOnProductDetailPage')
+data.setCell(1, 2, 'com.qa.test.ProductTest')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invaildPassword')
+data.setCell(2, 1, 'successLogin')
 data.setCell(2, 2, 'com.qa.test.LoginTest')
-data.setCell(2, 3, 4509);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invaildUser')
+data.setCell(3, 1, 'invaildPassword')
 data.setCell(3, 2, 'com.qa.test.LoginTest')
-data.setCell(3, 3, 3288);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateProductOnProductPage')
-data.setCell(4, 2, 'com.qa.test.ProductTest')
-data.setCell(4, 3, 1728);
+data.setCell(4, 1, 'invaildUser')
+data.setCell(4, 2, 'com.qa.test.LoginTest')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'successLogin')
+data.setCell(5, 2, 'com.qa.test.LoginTest')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateProductOnProductDetailPage')
+data.setCell(6, 2, 'com.qa.test.ProductTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateProductOnProductPage')
+data.setCell(7, 2, 'com.qa.test.ProductTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invaildUser')
+data.setCell(8, 2, 'com.qa.test.LoginTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'invaildPassword')
+data.setCell(9, 2, 'com.qa.test.LoginTest')
+data.setCell(9, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -310,24 +445,21 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">validateProductOnProductPage</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This is image</span>
-                <span class="reporter-method-output"><a href='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png'><img src='C:\Users\CSM\git\TDD_Framework_2.0\firstTest\Screenshot\Android_10_Pixel_2_API_30\2020-09-11-13-09-55\[TestClass name=class com.qa.test.ProductTest]\validateProductOnProductPage.png' height=500 width=500 /></a></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.qa.test.ProductTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">afterTest</span>
+                <br/>
+                <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
@@ -343,128 +475,252 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(Android, 10, Pixel_2_API_30, true, 80932AHJDJF)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(Android, 10, Pixel_2_API_29, true, 80932AHJDJF, 10000, 11000, iOSOnly, iOSOnly)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">6926 ms</span>
+                <span class="method-start">27 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">9885 ms</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.qa.test.LoginTest.invaildPassword())</span>
-                <span class="method-start">10425 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invaildPassword</span>
-                <span class="method-start">10531 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">15043 ms</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=invaildPassword status=SUCCESS method=LoginTest.invaildPassword()[pri:0, instance:c...)</span>
-                <span class="method-start">15043 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">40 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">15842 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.qa.test.LoginTest.invaildUser())</span>
-                <span class="method-start">16318 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">44 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invaildUser</span>
-                <span class="method-start">16319 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">19609 ms</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=invaildUser status=SUCCESS method=LoginTest.invaildUser()[pri:0, instance:com.qa.te...)</span>
-                <span class="method-start">19609 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">20400 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.qa.test.LoginTest.successLogin())</span>
-                <span class="method-start">20879 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">successLogin</span>
-                <span class="method-start">20881 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">25636 ms</span>
+                <span class="method-start">52 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=successLogin status=SUCCESS method=LoginTest.successLogin()[pri:0, instance:com.qa....)</span>
-                <span class="method-start">25636 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">53 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.test.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">26525 ms</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">29254 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.qa.test.ProductTest.validateProductOnProductDetailPage())</span>
-                <span class="method-start">29873 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateProductOnProductDetailPage</span>
-                <span class="method-start">34184 ms</span>
+                <span class="method-start">58 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">42314 ms</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateProductOnProductDetailPage status=SUCCESS method=ProductTest.validateProduc...)</span>
-                <span class="method-start">45525 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">46455 ms</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(public void com.qa.test.ProductTest.validateProductOnProductPage())</span>
-                <span class="method-start">46947 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">validateProductOnProductPage</span>
-                <span class="method-start">50510 ms</span>
+                <span class="method-start">63 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">53199 ms</span>
+                <span class="method-start">66 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=validateProductOnProductPage status=FAILURE method=ProductTest.validateProductOnPro...)</span>
-                <span class="method-start">55255 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">67 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.test.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">56275 ms</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">beforeTest(Android, 10, Nexus_5X_API_29, true, 80932AHJDJF, 10001, 11001, iOSOnly, iOSOnly)</span>
+                <span class="method-start">100 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">106 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invaildPassword</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">112 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">113 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invaildUser</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">115 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successLogin</span>
+                <span class="method-start">119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">121 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.ProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">125 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOnProductDetailPage</span>
+                <span class="method-start">126 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">128 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOnProductPage</span>
+                <span class="method-start">136 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">138 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">139 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
