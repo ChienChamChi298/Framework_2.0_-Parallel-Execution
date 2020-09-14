@@ -46,7 +46,8 @@ public class BaseTest {
  protected static ThreadLocal <AppiumDriver> driver = new  ThreadLocal <AppiumDriver>();
  protected static  ThreadLocal <Properties> props = new  ThreadLocal <Properties>();  
  protected static ThreadLocal <String> platform = new  ThreadLocal <String>(); 
- protected static ThreadLocal <String> dateTime = new  ThreadLocal <String>(); 
+ protected static ThreadLocal <String> dateTime = new  ThreadLocal <String>();  
+ protected static ThreadLocal <String> deviceName = new  ThreadLocal <String>(); 
  protected static ThreadLocal <HashMap <String, String>> strings = new ThreadLocal <HashMap <String, String>>();
 
  TestUtils testUltils;  
@@ -92,8 +93,13 @@ public void setStrings( HashMap <String, String> str) {
 	strings.set(str);
 }
 
+public String getDeviceName() {
+	return deviceName.get(); 
+} 
 
-
+public void setDeviceName(String name) {
+	deviceName.set(name); 
+} 
 
  public BaseTest() {
 	 PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
@@ -160,6 +166,8 @@ public void setStrings( HashMap <String, String> str) {
 	 	InputStream inputStream = null; 
 	 	InputStream stringIs = null; 
 	 	
+	 	setDeviceName(deviceName);
+	 	
 	 	URL url;
 	    try {  
             setProperties(props);
@@ -170,10 +178,11 @@ public void setStrings( HashMap <String, String> str) {
 	    	
 	    	stringIs = getClass().getClassLoader().getResourceAsStream(xmlString); 
 	    	setStrings(testUltils.parseStringXML(stringIs));
-	    	
+	    	 
 	    	DesiredCapabilities  capabilities = new DesiredCapabilities(); 
-	   	
-			//Cach 1
+	    	
+			
+	    	//Cach 1
 			//capabilities.setCapability("app",  "C:\\Users\\CSM\\Downloads\\Android.SauceLabs.Mobile.Sample.app.2.3.0.apk");  
 			
 			//Cach 2 
@@ -191,7 +200,7 @@ public void setStrings( HashMap <String, String> str) {
 	            	String urlAppAndroid = getClass().getResource(props.getProperty("androidAppLocation")).getFile();    
 	            	String appLocation = new File(urlAppAndroid).toString(); // String above include '\' at first character so we want remove it 
 	            	System.out.println("Absolute path file apk is " + appLocation);
-	            	capabilities.setCapability("app",  appLocation); 
+	            	//capabilities.setCapability("app",  appLocation); 
 	            	
 					capabilities.setCapability("automationName", props.getProperty("androidAutomationName"));   
 					capabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
@@ -201,48 +210,16 @@ public void setStrings( HashMap <String, String> str) {
 					if (emulator.equalsIgnoreCase("true")) { 
 						capabilities.setCapability("avd", deviceName);   
 						capabilities.setCapability("platformVersion", platformVersion); 
-						capabilities.setCapability("avdLaunchTimeout", 120000);
+						//capabilities.setCapability("avdLaunchTimeout", 120000);
 					} else { 
 						capabilities.setCapability("udid", udid); 
 					}  
 					
 					capabilities.setCapability("systemPort",  systemPort); 
 					capabilities.setCapability("chromeDriverPort",  chromeDriverPort);
-					if (deviceName == "Nexus_5X_API_29") {
-						url = new URL(props.getProperty("appiumURL") + "4724/wd/hub"); 
-					} else {
-						url = new URL(props.getProperty("appiumURL") + "4723/wd/hub"); 
-					}
-		
+					url = new URL(props.getProperty("appiumURL") + "4723/wd/hub"); 
 					driver = new AndroidDriver(url, capabilities); 
-					break;    
-				
-	            case "Android_2" :    
-	            	
-	            	String urlAppAndroid2 = getClass().getResource(props.getProperty("androidAppLocation")).getFile();    
-	            	String appLocation2 = new File(urlAppAndroid2).toString(); // String above include '\' at first character so we want remove it 
-	            	System.out.println("Absolute path file apk is " + appLocation2);
-	            	capabilities.setCapability("app",  appLocation2); 
-	            	
-					capabilities.setCapability("automationName", props.getProperty("androidAutomationName"));   
-					capabilities.setCapability("appActivity", props.getProperty("androidAppActivity"));
-					capabilities.setCapability("appPackage",  props.getProperty("androidAppPackage"));   
-					
-					
-					if (emulator.equalsIgnoreCase("true")) { 
-						capabilities.setCapability("avd", deviceName);   
-						capabilities.setCapability("platformVersion", platformVersion);
-					} else { 
-						capabilities.setCapability("udid", udid); 
-					}  
-					
-					capabilities.setCapability("systemPort",  systemPort); 
-					capabilities.setCapability("chromeDriverPort",  chromeDriverPort);
-					
-					url = new URL(props.getProperty("appiumURL") + "4723/wd/hub");  
-					driver = new AndroidDriver(url, capabilities); 
-					break;   
-					
+					break;    			
 					
 	            case "iOS" :  
 	            	//Install app
@@ -263,8 +240,9 @@ public void setStrings( HashMap <String, String> str) {
 					
 				default :  
 					throw new Exception("Invaild platform " + platformName);  
-		    }  
-            setDriver(driver);
+		    }   
+            setDriver(driver); 
+           
 		} catch (Exception e) {
 	    	e.printStackTrace();
 	    } finally {

@@ -14,29 +14,18 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import com.qa.BaseTest; 
+import com.qa.BaseTest;
+import com.qa.util.TestUtils; 
 
 //CLass of TestNG, customize lai thanh cua minh
 public class TestListener implements ITestListener {  
-	public void onTestStart() {
-		 
-		
-	} 
-	
-	public void onTestFinish() {
-		
-	} 
-	
-	public void onTestSuccess() {
-		
-	}
-	
+	TestUtils testUtils = new TestUtils(); 
 	public void onTestFailure(ITestResult result) {
 		if(result.getThrowable() != null) {
 			  StringWriter sw = new StringWriter(); 
 			  PrintWriter pw = new PrintWriter(sw); 
 			  result.getThrowable().printStackTrace(pw); 
-			  System.out.println("Error is " + sw.toString());
+			  testUtils.log("Error is " + sw.toString());
 		} 
 		 
 		//Chup anh man hinh
@@ -45,7 +34,6 @@ public class TestListener implements ITestListener {
 		
 		Map<String, String> params = new HashMap<String, String>(); 
 		params = result.getTestContext().getCurrentXmlTest().getAllParameters(); 
-		System.out.println(params); 
 		
 		String imagePath = "Screenshot" + File.separator + params.get("platformName") + "_" + params.get("platformVersion") + "_" + params.get("deviceName") 
 		+ File.separator + baseTest.getDateTime() + File.separator + result.getTestClass() +  File.separator + result.getName() + ".png"; 

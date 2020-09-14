@@ -1,6 +1,7 @@
 package com.qa.page;
 
 import com.qa.BaseTest;
+import com.qa.util.TestUtils;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -25,23 +26,24 @@ public class LoginPage extends BaseTest{
 	  @iOSXCUITFindBy (xpath = "//XCUIElementTypeOther[@name=\"test-Error message\"]/child::XCUIElementTypeStaticText")
 	  private MobileElement err;  
 	  
+	  TestUtils testUtils = new TestUtils();
 
 public LoginPage enterUserName(String userName) {  
-	System.out.println("Login with: " + userName);
+	testUtils.log("Login with username: " + userName);
 	clear(userNameTxtFld);
 	sendkeys( userNameTxtFld, userName);  
 	return this;
 }  
 
 public LoginPage enterPassword(String password) {   
-	System.out.println("Login with: " + password);
+	testUtils.log("Login with password: " + password);
 	clear(passwordTextFld);
 	sendkeys( passwordTextFld, password);  
 	return this;
 }   
 
 public ProductPage pressLoginBtn() { 
-	System.out.println("Press login button");
+	testUtils.log("Press login button");
 	click(buttonLogin);  
 	return new ProductPage();
 }  

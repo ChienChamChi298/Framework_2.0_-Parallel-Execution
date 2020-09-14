@@ -2,6 +2,7 @@ package com.qa.page;
 
 import com.qa.BaseTest;
 import com.qa.MenuPage;
+import com.qa.util.TestUtils;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -20,29 +21,30 @@ public class ProductPage extends MenuPage{
 	  @iOSXCUITFindBy (xpath = "(//XCUIElementTypeStaticText[@name=\"test-Price\"])[1]")
 	  private MobileElement priceProduct; 
 	  
+	  TestUtils testUtils = new TestUtils(); 
 	  
 public String getTitle() { 
 	String title = getText(titlePage); 
-	System.out.println("Title is " + title);
+	testUtils.log("Title is " + title);
 	return title;  
 }  
 
 
 public String getProductName() { 
 	String title = getText(titleProduct); 
-	System.out.println("Name product is " + title);
+	testUtils.log("Name product is " + title);
 	return title;  
 }  
 
 public String getPriceProduct() {  
 	String title = getText(priceProduct); 
-	System.out.println("Price product is " + title);
+	testUtils.log("Price product is " + title);
 	return title; 
 }   
 
 
 public ProductDetailPage clickTitle() { 
-	System.out.println("Navigate to product detail page");
+	testUtils.log("Navigate to product detail page");
 	click(titleProduct); 
 	return new ProductDetailPage();
 } 

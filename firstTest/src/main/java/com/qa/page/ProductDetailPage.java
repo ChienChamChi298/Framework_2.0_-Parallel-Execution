@@ -1,6 +1,7 @@
 package com.qa.page;
 
 import com.qa.BaseTest;
+import com.qa.util.TestUtils;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -25,9 +26,11 @@ public class ProductDetailPage extends BaseTest{
 	  @iOSXCUITFindBy (id = "test-ADD TO CART")
 	  private MobileElement addToCart; 
 	  
+	  TestUtils testUtils = new TestUtils(); 
+	  
 public String getProductTitle() { 
 	String title = getText(titleProduct); 
-	System.out.println("Name product is " + title);
+	testUtils.log("Name product is " + title);
 	return title; 
 }  
 
@@ -35,19 +38,19 @@ public String getProductTitle() {
 public String getProductDesc() { 
 	
 	String title = getText(detailProduct); 
-	System.out.println("Description product is " + title);
+	testUtils.log("Description product is " + title);
 	return title;  
 }  
 
 public ProductPage backToProduct() { 
-	System.out.println("Navigate back to product page");
+	testUtils.log("Navigate back to product page");
 	click(backBtn); 
 	return new ProductPage();
 }    
 
 public String getPrice() { 
 	String title = getText(price); 
-	System.out.println("Price product is " + title);
+	testUtils.log("Price product is " + title);
 	return title;  
 } 
 

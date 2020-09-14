@@ -1,6 +1,7 @@
 package com.qa.page;
 
 import com.qa.BaseTest;
+import com.qa.util.TestUtils;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -11,9 +12,10 @@ public class SettingPage extends BaseTest{
 	@iOSXCUITFindBy (id = "test-LOGOUT")
 	private MobileElement logOutTextLink; 
 	
-	
+	  TestUtils testUtils = new TestUtils(); 
+	  
 	public LoginPage pressBtn() {  
-		System.out.println("Press logout text link");
+		testUtils.log("Press logout text link");
 		click(logOutTextLink); 
 		return new LoginPage(); 
 	}

@@ -20,6 +20,8 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.qa.BaseTest;
+
 public class TestUtils {
 	public static final long WAIT = 10; 
 	
@@ -63,4 +65,31 @@ public class TestUtils {
 		
 	}
 	
+	public void log(String txt) {
+		BaseTest base = new BaseTest();
+		String msg = Thread.currentThread().getId() + ":" + base.getPlatform() + ":" + base.getDeviceName() + ":"
+				+ Thread.currentThread().getStackTrace()[2].getClassName() + ":" + txt;
+		
+		System.out.println(msg);
+		
+		String strFile = "logs" + File.separator + base.getPlatform() + "_" + base.getDeviceName() 
+				+ File.separator + base.getDateTime();
+
+		File logFile = new File(strFile);
+
+		if (!logFile.exists()) {
+			logFile.mkdirs();
+		}
+		
+		FileWriter fileWriter = null;
+		try {
+			fileWriter = new FileWriter(logFile + File.separator + "log.txt",true);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    PrintWriter printWriter = new PrintWriter(fileWriter);
+	    printWriter.println(msg);
+	    printWriter.close();
+	}
 }
